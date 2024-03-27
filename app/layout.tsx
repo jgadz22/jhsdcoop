@@ -10,7 +10,10 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "JSHDCoop",
-  description: "Japan Global Human Resources Joint Union",
+  description: "Japan Global Human Resources Joint Union.",
+  icons: {
+    icon: "jghc_logo_white@png.svg",
+  },
 };
 
 export default function RootLayout({
