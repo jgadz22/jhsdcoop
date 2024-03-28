@@ -5,11 +5,11 @@ import Card from "./Card";
 const Collection = () => {
   return (
     <>
-      <div className="flex flex-col items-center gap-10">
-        <ul className="grid w-full grid-cols-1 gap-5 lg:grid-cols-3 xl:gap-10 transition-all duration-500">
+      <div className="w-full flex flex-col items-center">
+        <ul className="grid grid-cols-1 gap-5 xl:gap-10 lg:grid-cols-3 transition-all duration-500">
           {secondComponent.map((history) => {
             return (
-              <li key={history.id} className="flex justify-center">
+              <li key={history.id} className="w-full flex justify-center">
                 <Card
                   image={history.image}
                   title={history.title}

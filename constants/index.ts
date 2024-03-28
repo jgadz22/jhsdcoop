@@ -52,3 +52,30 @@ export const secondComponent = [
       "https://jhsd.coop/2023/09/26/%e3%83%95%e3%82%a3%e3%83%aa%e3%83%94%e3%83%b3%e3%81%8b%e3%82%893%e5%90%8d%e3%81%ae%e5%ae%9f%e7%bf%92%e7%94%9f%e3%81%8c%e5%85%a5%e5%9b%bd%e3%81%97%e3%81%be%e3%81%97%e3%81%9f%e3%80%82/",
   },
 ];
+
+export const thirdComponent = [
+  {
+    id: "1",
+    image: "/assets/images/filipinCity01-1.jpg",
+  },
+  {
+    id: "2",
+    image: "/assets/images/myanmaHuman04-1.jpg",
+  },
+  {
+    id: "3",
+    image: "/assets/images/filipinCity04-1.jpg",
+  },
+  {
+    id: "4",
+    image: "/assets/images/filipinHuman-1.jpg",
+  },
+  {
+    id: "5",
+    image: "/assets/images/myanmaCity01-1.jpg",
+  },
+  {
+    id: "6",
+    image: "/assets/images/myanmaHuman02-1.jpg",
+  },
+];

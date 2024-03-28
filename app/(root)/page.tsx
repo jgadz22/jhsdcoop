@@ -1,4 +1,5 @@
 import Collection from "@/components/shared/Collection";
+import ThirdComponent from "@/components/shared/ThirdComponent";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
@@ -22,9 +23,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="second" className="w-full bg-bodyColor text-white">
-        <div className="wrapper my-8 flex items-center justify-center flex-col md:flex-row gap-8 md:gap-12">
+      <section id="second" className="w-full bg-bodyColor text-white py-14">
+        <div className="wrapper flex items-center justify-center flex-col md:flex-row gap-8 md:gap-12">
           <Collection />
+        </div>
+      </section>
+
+      <section id="third" className="w-full ">
+        <div className="wrapper my-8 flex items-center justify-between flex-col md:flex-row gap-12 md:gap-16">
+          <ThirdComponent />
         </div>
       </section>
     </>
