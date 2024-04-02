@@ -1,6 +1,7 @@
 import Collection from "@/components/shared/Collection";
+import FifthComponent from "@/components/shared/FifthComponent";
+import FourthComponent from "@/components/shared/FourthComponent";
 import ThirdComponent from "@/components/shared/ThirdComponent";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 export default function Home() {
@@ -29,9 +30,21 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="third" className="w-full ">
-        <div className="wrapper my-8 flex items-center justify-between flex-col md:flex-row gap-12 md:gap-16">
+      <section id="third" className="w-full bg-white">
+        <div className="wrapper py-8 lg:py-20 flex items-center justify-between flex-col md:flex-row gap-12 md:gap-16">
           <ThirdComponent />
+        </div>
+      </section>
+
+      <section id="fourth" className="w-full bg-black/70">
+        <div className="wrapper py-8 flex items-center justify-between flex-col md:flex-row gap-12 md:gap-16">
+          <FourthComponent />
+        </div>
+      </section>
+
+      <section id="fifth" className="w-full bg-[#089ede]">
+        <div className="wrapper flex items-center justify-between flex-col md:flex-row gap-12 md:gap-16">
+          <FifthComponent />
         </div>
       </section>
     </>

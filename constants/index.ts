@@ -79,3 +79,21 @@ export const thirdComponent = [
     image: "/assets/images/myanmaHuman02-1.jpg",
   },
 ];
+
+export const carouselImages = [
+  {
+    id: "1",
+    image:
+      "/assets/images/topSapo01-ozpfbesnwamfh70c15cd5osjba9a4aatb1k9qjel6s.jpg",
+  },
+  {
+    id: "2",
+    image:
+      "/assets/images/topSapo02-ozpfbesnwamfh70c15cd5osjba9a4aatb1k9qjel6s.jpg",
+  },
+  {
+    id: "3",
+    image:
+      "/assets/images/topSapo03-ozpfbesnwamfh70c15cd5osjba9a4aatb1k9qjel6s.jpg",
+  },
+];
