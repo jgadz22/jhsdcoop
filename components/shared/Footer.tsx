@@ -2,11 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Separator } from "../ui/separator";
+import Translate from "./Translate";
+import Map from "./Map";
 
 const Footer = () => {
   return (
     <footer className="border-t">
-      <div className="flex-center wrapper flex-between flex flex-col gap-10 md:gap-4 p-5 sm:p-2 items-center md:flex-row">
+      <div className="flex-center wrapper flex-between flex flex-col gap-10 md:gap-4 p-5 sm:p-2 mb-5 items-center md:flex-row">
         <div className="flex flex-start flex-col gap-4 md:p-medium-20 p-medium-14">
           <div className="flex flex-start flex-col gap-4 h5-bold text-yellow-400 my-10">
             <p>日本グローバル人材協同組合</p>
@@ -18,7 +20,7 @@ const Footer = () => {
                 src="/assets/icons/location-grey.svg"
                 width={28}
                 height={28}
-                alt="JHSD logo"
+                alt="location logo"
               />
             </p>
             <p>〒020-0026 岩手県盛岡市開運橋通3番39号ダビンチビル2</p>
@@ -53,8 +55,19 @@ const Footer = () => {
               alt="JHSD logo"
             />
           </Link>
+
+          <div className="">
+            <div className="">
+              <Translate />
+            </div>
+            <div className="">
+              <p>2024年JHSD生協 無断転載を禁じます。</p>
+            </div>
+          </div>
         </div>
-        <div className="">Google Map</div>
+        <div className="w-[350px] lg:w-[700px] flex items-center justify-center">
+          <Map />
+        </div>
       </div>
     </footer>
   );

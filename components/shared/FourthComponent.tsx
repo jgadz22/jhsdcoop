@@ -12,7 +12,7 @@ import { carouselImages } from "@/constants";
 
 const FourthComponent = () => {
   return (
-    <div className="w-full max-h-screen flex flex-col gap-5 xl:gap-10 py-16 lg:py-8">
+    <div className="w-full flex flex-col gap-5 xl:gap-10 py-16 lg:py-8">
       <div className="">
         <p className="h5-bold text-yellow-400 flex items-center justify-center">
           日本グローバル人材協同組合の強み
@@ -23,7 +23,7 @@ const FourthComponent = () => {
           日本グローバル人材協同組合は、外国人技能実習制度の「監理団体」として外国人技能実習生を受け入れるためのサポートをしております。
         </p>
       </div>
-      <div className="flex items-center justify-center my-10 lg:my-15">
+      <div className="flex items-center justify-center my-2 xl:my-5">
         <Carousel>
           <CarouselContent className="w-[250px] md:w-[500px] lg:w-[750px]">
             {carouselImages.map((carousel) => {

@@ -1,4 +1,4 @@
-export const headerLinks = [
+export const headerLinksJapanese = [
   {
     label: "組合理念",
     route: "https://jhsd.coop/concept/",
@@ -21,6 +21,33 @@ export const headerLinks = [
   },
   {
     label: "お問い合わせ",
+    route: "https://jhsd.coop/contact/",
+  },
+];
+
+export const headerLinksEnglish = [
+  {
+    label: "Union Philosophy",
+    route: "https://jhsd.coop/concept/",
+  },
+  {
+    label: "Business Details",
+    route: "https://jhsd.coop/BC/",
+  },
+  {
+    label: "About the technical intern training system",
+    route: "https://jhsd.coop/ftit/",
+  },
+  {
+    label: "Sending Organization",
+    route: "https://jhsd.coop/SO/",
+  },
+  {
+    label: "Union Overview",
+    route: "https://jhsd.coop/overview/",
+  },
+  {
+    label: "Inquiry",
     route: "https://jhsd.coop/contact/",
   },
 ];
@@ -97,3 +124,7 @@ export const carouselImages = [
       "/assets/images/topSapo03-ozpfbesnwamfh70c15cd5osjba9a4aatb1k9qjel6s.jpg",
   },
 ];
+
+export const apikey = {
+  map: process.env.MAP_TILER_API_KEY,
+};
