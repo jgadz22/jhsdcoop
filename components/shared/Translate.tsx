@@ -21,7 +21,7 @@ const Translate: React.FC = () => {
       // Add event listener for language change
       (window as any).google.translate.TranslateElement.prototype.onChange =
         function (e: { target: { value: string } }) {
-          setSelectedLanguage(e.target.value);
+          setSelectedLanguage(e.target.value.toString);
         };
 
       setIsLoading(false); // Set loading state to false after initialization
@@ -44,10 +44,10 @@ const Translate: React.FC = () => {
   if (isLoading) {
     return <p>Loading translation...</p>;
   }
-
   return (
     <div>
       <div id="google_translate_element"></div>
+      <p className="text-gray-500">Selected Language: {selectedLanguage}</p>
     </div>
   );
 };

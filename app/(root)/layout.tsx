@@ -8,9 +8,7 @@ export default function RootLayout({
 }>) {
   return (
     <div className="flex h-screen flex-col">
-      <Header />
-      <main className="flex-1 bg-castle-img bg-fixed bg-cover">{children}</main>
-      <Footer />
+      <main>{children}</main>
     </div>
   );
 }
