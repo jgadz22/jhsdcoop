@@ -8,7 +8,8 @@ const Translate: React.FC = () => {
       window as any
     ).google.translate.TranslateElement(
       {
-        pageLanguage: "en",
+        pageLanguage: "ja",
+        includedLanguages: "en,ja",
         layout: (window as any).google.translate.TranslateElement.InlineLayout
           .VERTICAL,
       },
