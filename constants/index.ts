@@ -35,7 +35,7 @@ export const headerLinksEnglish = [
     route: "https://jhsd.coop/BC/",
   },
   {
-    label: "About the technical intern training system",
+    label: "Technical Intern Training",
     route: "https://jhsd.coop/ftit/",
   },
   {

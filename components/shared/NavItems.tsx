@@ -9,7 +9,7 @@ const NavItems = () => {
   const pathname = usePathname();
 
   return (
-    <ul className="md:flex-between flex w-full flex-col items-start gap-5 md:flex-row">
+    <>
       {headerLinksJapanese.map((link) => {
         const isActive = pathname === link.route;
         return (
@@ -23,7 +23,7 @@ const NavItems = () => {
           </li>
         );
       })}
-    </ul>
+    </>
   );
 };
 

@@ -65,7 +65,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="w-[350px] lg:w-[700px] flex items-center justify-center">
+        <div className="w-full flex items-center justify-center">
           <Map />
         </div>
       </div>
