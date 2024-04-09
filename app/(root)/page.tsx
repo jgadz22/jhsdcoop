@@ -1,5 +1,6 @@
 import Collection from "@/components/shared/Collection";
 import FifthComponent from "@/components/shared/FifthComponent";
+import FirstComponent from "@/components/shared/FirstComponent";
 import FourthComponent from "@/components/shared/FourthComponent";
 import ThirdComponent from "@/components/shared/ThirdComponent";
 import Image from "next/image";
@@ -9,20 +10,7 @@ export default function Home() {
     <div>
       <div className="flex-1 bg-castle-img bg-fixed bg-cover">
         <section id="first">
-          <div className="max-h-[500px] h-[75dvh] lg:max-h-[725px] bg-hero-img bg-cover bg-center flex items-center flex-col justify-center  transition-all duration-500 gap-5 md:gap-10">
-            <div className="w-[250px] md:max-w-xl flex items-center justify-center">
-              <Image
-                src="/assets/images/jghc_logo@png.png"
-                width={500}
-                height={150}
-                alt="JHSD logo"
-              />
-            </div>
-
-            <div className="p-semibold-14 md:p-bold-24 flex text-center">
-              日本グローバル人材共同組合
-            </div>
-          </div>
+          <FirstComponent />
         </section>
 
         <section id="second" className="w-full bg-bodyColor text-white py-14">

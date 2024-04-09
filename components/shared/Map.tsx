@@ -6,26 +6,26 @@ import "@maptiler/sdk/dist/maptiler-sdk.css";
 const Map: React.FC = () => {
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<maptilersdk.Map | null>(null);
-  const tokyo = { lng: 141.141, lat: 39.702 };
+  const place = { lng: 141.14136485051762, lat: 39.70220630797061 };
   const [zoom] = useState(14);
 
   maptilersdk.config.apiKey = process.env.mapApiKey
     ? process.env.mapApiKey
     : "No API";
   useEffect(() => {
-    if (map.current) return; // stops map from initializing more than once
+    if (map.current) return;
 
     map.current = new maptilersdk.Map({
       container: mapContainer.current!,
       style: maptilersdk.MapStyle.STREETS,
-      center: [tokyo.lng, tokyo.lat],
+      center: [place.lng, place.lat],
       zoom: zoom,
     });
 
     new maptilersdk.Marker({ color: "#FF0000" })
-      .setLngLat([141.141, 39.702])
+      .setLngLat([141.14136485051762, 39.70220630797061])
       .addTo(map.current!);
-  }, [process.env.mapApiKey, tokyo.lng, tokyo.lat, zoom]);
+  }, [process.env.mapApiKey, place.lng, place.lat, zoom]);
 
   return (
     <div className="relative w-full h-[525px] md:h-[420px] lg:h-[375px]">

@@ -20,11 +20,13 @@
     "clsx": "^2.1.0",
     "dotenv": "^16.4.5",
     "embla-carousel-react": "^8.0.0",
+    "framer-motion": "^11.0.25",
     "lucide-react": "^0.363.0",
     "maplibre-gl": "^4.1.2",
     "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-intersection-observer": "^9.8.2",
     "tailwind-merge": "^2.2.2",
     "tailwindcss-animate": "^1.0.7",
     "uploadthing": "^6.7.0"
