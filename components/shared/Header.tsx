@@ -4,19 +4,19 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import NavItems from "./NavItems";
+import { Separator } from "../ui/separator";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
-  const [shadow, setShadow] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
   };
 
   return (
-    <header className="w-full border-b">
-      <div className="wrapper flex items-center justify-between">
-        <Link href="/" className="w-36">
+    <header className="w-full border-b bg-black text-white">
+      <div className="p-3 w-full xl:wrapper flex items-center justify-between">
+        <Link href="/" className="w-[250px]">
           <Image
             src="/assets/images/jghc_logo_white@png.svg"
             width={128}
@@ -26,10 +26,10 @@ const Header = () => {
         </Link>
 
         <div>
-          <ul className="hidden md:flex-between w-full flex-col items-start gap-5 md:flex-row">
+          <ul className="hidden lg:flex-between w-full flex-col items-start gap-5 md:flex-row">
             <NavItems />
           </ul>
-          <div onClick={handleNav} className="md:hidden">
+          <div onClick={handleNav} className="lg:hidden">
             <Image
               src="/assets/icons/menu.svg"
               alt="menu"
@@ -42,18 +42,18 @@ const Header = () => {
       </div>
       <div
         className={
-          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+          nav ? "lg:hidden fixed left-0 top-0 w-full h-full bg-black/70" : ""
         }
       >
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[370px] md:w-[45%] h-screen bg-white py-10 px-5 ease-in duration-500"
-              : "fixed left-[-100%] top-0 p-5 pr-10 pl-10 ease-in duration-500"
+              ? "fixed left-0 top-0 w-[270px] h-full bg-white pt-10 p-2 ease-in duration-500"
+              : "fixed left-[-150%] top-0 p-2 ease-in duration-500"
           }
         >
           <div>
-            <div className="flex w-full items-center justify-between">
+            <div className="flex w-full items-center justify-between mb-5">
               <Link href="/" className="w-36">
                 <Image
                   src="/assets/images/jghc_logo_white@png.svg"
@@ -76,8 +76,11 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div className="py-4 flex flex-col cursor-pointer">
-            <ul className="flex md:flex-between w-full flex-col items-start gap-5 md:flex-row">
+
+          <Separator />
+
+          <div className="py-4 flex flex-col cursor-pointer mt-5">
+            <ul className="flex w-full flex-col items-start gap-5 text-black">
               <NavItems />
             </ul>
           </div>

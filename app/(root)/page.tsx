@@ -1,19 +1,16 @@
 import Collection from "@/components/shared/Collection";
 import FifthComponent from "@/components/shared/FifthComponent";
-import Footer from "@/components/shared/Footer";
 import FourthComponent from "@/components/shared/FourthComponent";
-import Header from "@/components/shared/Header";
 import ThirdComponent from "@/components/shared/ThirdComponent";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <>
-      <Header />
+    <div>
       <div className="flex-1 bg-castle-img bg-fixed bg-cover">
         <section id="first">
           <div className="max-h-[500px] h-[75dvh] lg:max-h-[725px] bg-hero-img bg-cover bg-center flex items-center flex-col justify-center  transition-all duration-500 gap-5 md:gap-10">
-            <div className="max-w-xs md:max-w-xl flex items-center justify-center">
+            <div className="w-[250px] md:max-w-xl flex items-center justify-center">
               <Image
                 src="/assets/images/jghc_logo@png.png"
                 width={500}
@@ -22,7 +19,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="p-semibold-14 md:p-bold-24">
+            <div className="p-semibold-14 md:p-bold-24 flex text-center">
               日本グローバル人材共同組合
             </div>
           </div>
@@ -35,7 +32,7 @@ export default function Home() {
         </section>
 
         <section id="third" className="w-full bg-white">
-          <div className="wrapper py-8 lg:py-20 flex items-center justify-between flex-col md:flex-row gap-12 md:gap-16">
+          <div className="wrapper py-8 lg:py-20 flex items-center justify-between flex-col md:flex-row gap-5 md:gap-10">
             <ThirdComponent />
           </div>
         </section>
@@ -52,7 +49,6 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <Footer />
-    </>
+    </div>
   );
 }

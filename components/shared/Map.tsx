@@ -28,7 +28,7 @@ const Map: React.FC = () => {
   }, [process.env.mapApiKey, tokyo.lng, tokyo.lat, zoom]);
 
   return (
-    <div className="relative w-full h-[525px]">
+    <div className="relative w-full h-[525px] md:h-[420px] lg:h-[375px]">
       <div ref={mapContainer} className="absolute w-full h-full" />
     </div>
   );

@@ -13,9 +13,9 @@ type CardProps = {
 const Card = ({ image, title, date, details, route }: CardProps) => {
   return (
     <>
-      <div className="w-full p-2 h-auto rounded-lg shadow-shadowOne flex items-center flex-col bg-gradient-to-r from-bodyColor to-[#202327] group hover:bg-gradient-to-b hover:from-gray-900 transition-all duration-500">
+      <div className="w-[550px] lg:w-full p-2 h-auto rounded-lg shadow-shadowOne flex items-center flex-col bg-gradient-to-r from-bodyColor to-[#202327] group hover:bg-gradient-to-b hover:from-gray-900 transition-all duration-500">
         <div className="w-full p-5 flex items-center justify-center flex-col gap-6 overflow-hidden rounded-lg">
-          <div className="max-h-[225px] w-full flex items-center justify-between overflow-hidden rounded-lg">
+          <div className="max-h-[225px] w-full flex items-center justify-center overflow-hidden rounded-lg">
             <Image
               className="object-cover group-hover:scale-110 duration-300 cursor-pointer"
               src={image}
